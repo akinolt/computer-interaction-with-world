@@ -1,5 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using WebApi.Interface.Dtos;
+using WebApi.Interface.Speech.Dtos;
 using WebApi.Speech;
 
 namespace WebApi.Controllers

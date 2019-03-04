@@ -1,4 +1,4 @@
-﻿using WebApi.Interface.Dtos;
+﻿using WebApi.Interface.Speech.Dtos;
 using System.Collections.Concurrent;
 
 namespace WebApi.Speech

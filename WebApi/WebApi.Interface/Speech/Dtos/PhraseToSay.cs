@@ -1,6 +1,6 @@
-﻿using WebApi.Interface.Enums;
+﻿using WebApi.Interface.Speech.Enums;
 
-namespace WebApi.Interface.Dtos
+namespace WebApi.Interface.Speech.Dtos
 {
     public class PhraseToSay
     {

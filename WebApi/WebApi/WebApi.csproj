@@ -5,6 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Folder Include="Coding\Events\" />
     <Folder Include="wwwroot\" />
   </ItemGroup>
 

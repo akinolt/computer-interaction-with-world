@@ -1,4 +1,4 @@
-﻿namespace WebApi.Interface.Enums
+﻿namespace WebApi.Interface.Speech.Enums
 {
     public class Gender
     {
