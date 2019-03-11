@@ -1,8 +1,15 @@
-﻿namespace WebApi.Coding.Data
+﻿namespace WebApi.Coding.Domain.Data
 {
     public class VariableString : StringData
     {
         private string value;
+
+        public VariableString(string name)
+        {
+            this.Name = name;
+        }
+
+        public string Name { get; set; }
 
         public override string Value => this.value;
 

@@ -1,4 +1,4 @@
-﻿namespace WebApi.Coding.Actions
+﻿namespace WebApi.Coding.Domain.Actions
 {
     public interface IAction
     {

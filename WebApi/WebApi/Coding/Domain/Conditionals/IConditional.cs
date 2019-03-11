@@ -1,4 +1,4 @@
-﻿namespace WebApi.Coding
+﻿namespace WebApi.Coding.Domain.Conditionals
 {
     public interface IConditional
     {

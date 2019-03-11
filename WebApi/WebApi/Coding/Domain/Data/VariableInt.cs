@@ -1,8 +1,17 @@
-﻿namespace WebApi.Coding.Data
+﻿using System;
+
+namespace WebApi.Coding.Domain.Data
 {
     public class VariableInt : IntData
     {
         private int value;
+
+        public VariableInt(string name)
+        {
+            this.Name = name;
+        }
+
+        public string Name { get; set; }
 
         public override int Value => this.value;
 

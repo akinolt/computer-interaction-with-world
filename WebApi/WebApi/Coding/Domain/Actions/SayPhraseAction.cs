@@ -1,26 +1,26 @@
-﻿using WebApi.Coding.Data;
+﻿using WebApi.Coding.Domain.Data;
 using WebApi.Speech;
 
-namespace WebApi.Coding.Actions
+namespace WebApi.Coding.Domain.Actions
 {
     public class SayPhraseAction : IAction
     {
-        public readonly IData phraseToSay;
-
         public readonly IPhraseQueue phraseQueue;
 
         public SayPhraseAction(IData phraseToSay, IPhraseQueue phraseQueue)
         {
-            this.phraseToSay = phraseToSay;
+            this.PhraseToSay = phraseToSay;
 
             this.phraseQueue = phraseQueue;
         }
+
+        public IData PhraseToSay { get; }
 
         public void Act()
         {
             var phraseToSayDto = new Interface.Speech.Dtos.PhraseToSay
             {
-                Phrase = this.phraseToSay.ToString(),
+                Phrase = this.PhraseToSay.ToString(),
                 Language = "en-GB",
                 Gender = new Interface.Speech.Enums.Gender { Value = Interface.Speech.Enums.Gender.Female }
             };

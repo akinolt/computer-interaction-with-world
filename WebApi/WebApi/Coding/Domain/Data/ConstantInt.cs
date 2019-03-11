@@ -1,4 +1,4 @@
-﻿namespace WebApi.Coding.Data
+﻿namespace WebApi.Coding.Domain.Data
 {
     public class ConstantInt : IntData
     {

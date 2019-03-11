@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace WebApi.Coding.Data
+namespace WebApi.Coding.Domain.Data
 {
     public abstract class StringData : IData
     {
