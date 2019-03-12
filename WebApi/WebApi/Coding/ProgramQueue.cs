@@ -1,12 +1,14 @@
 ﻿using System;
 using System.Collections.Concurrent;
+using System.Collections.Generic;
 using System.Linq;
+using WebApi.Coding.Domain;
 using WebApi.Coding.Domain.Actions;
 using WebApi.Coding.Domain.Data;
 
 namespace WebApi.Coding
 {
-    public interface IProgramQueue
+    public interface IProgramQueue : IEnumerable<Domain.Program>
     {
         void Enqueue(Domain.Program program);
 

@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using System.Linq;
 using WebApi.Coding;
 using WebApi.Coding.Assemblers;
 
@@ -15,6 +16,14 @@ namespace WebApi.Controllers
         {
             this.programQueue = programQueue;
             this.programAssembler = programAssembler;
+        }
+
+        // POST api/programs/queue
+        [Route("queue")]
+        [HttpGet]
+        public IActionResult GetQueue()
+        {
+            return Ok(this.programQueue.ToList());
         }
 
         // POST api/programs/queue
