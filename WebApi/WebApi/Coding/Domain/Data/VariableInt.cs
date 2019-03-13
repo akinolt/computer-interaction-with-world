@@ -2,7 +2,7 @@
 
 namespace WebApi.Coding.Domain.Data
 {
-    public class VariableInt : IntData
+    public class VariableInt : IntData, IVariable
     {
         private int value;
 

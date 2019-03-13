@@ -36,18 +36,18 @@ namespace WebApi.Controllers
             ////this.programQueue.Enqueue(program);
         }
 
-        // POST api/programs/dequeue
-        [Route("dequeue")]
-        [HttpPost]
-        public IActionResult Dequeue()
-        {
-            if (this.programQueue.TryDequeue(out var program))
-            {
-                var programDto = this.programAssembler.AssembleProgram(program);
-                return Ok(programDto);
-            }
+        ////// POST api/programs/dequeue
+        ////[Route("dequeue")]
+        ////[HttpPost]
+        ////public IActionResult Dequeue()
+        ////{
+        ////    if (this.programQueue.TryDequeue(out var program))
+        ////    {
+        ////        var programDto = this.programAssembler.AssembleProgram(program);
+        ////        return Ok(programDto);
+        ////    }
 
-            return NotFound();
-        }
+        ////    return NotFound();
+        ////}
     }
 }
